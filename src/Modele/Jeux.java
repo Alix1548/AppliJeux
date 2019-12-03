@@ -1,6 +1,7 @@
 package Modele;
 
 public class Jeux {
+    private String id;
     private String nom;
     private String description;
     private int duree;
@@ -13,6 +14,10 @@ public class Jeux {
         this.duree = duree;
         this.nbjMax = nbjMax;
         this.nbjMin = nbjMin;
+    }
+
+    public String getId() {
+        return id;
     }
 
     public String getNom() {
@@ -58,7 +63,8 @@ public class Jeux {
     @Override
     public String toString() {
         return "Jeux{" +
-                "nom='" + nom + '\'' +
+                "id='" + id + '\'' +
+                ", nom='" + nom + '\'' +
                 ", description='" + description + '\'' +
                 ", duree=" + duree +
                 ", nbjMax=" + nbjMax +
