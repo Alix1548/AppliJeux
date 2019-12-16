@@ -1,6 +1,6 @@
 package Modele;
 
-public class Adhérent {
+public class Adherent {
     private String id;
     private String login;
     private String password;
@@ -11,7 +11,15 @@ public class Adhérent {
         return id;
     }
 
-    public Adhérent(String login, String password, String nom, String prenom) {
+    public Adherent(String login, String password, String nom, String prenom) {
+        this.login = login;
+        this.password = password;
+        this.nom = nom;
+        this.prenom = prenom;
+    }
+
+    public Adherent(String id, String login, String password, String nom, String prenom) {
+        this.id = id;
         this.login = login;
         this.password = password;
         this.nom = nom;
