@@ -1,15 +1,11 @@
 package Modele;
 
 public class Adherent {
-    private String id;
+    private int id;
     private String login;
     private String password;
     private String nom;
     private String prenom;
-
-    public String getId() {
-        return id;
-    }
 
     public Adherent(String login, String password, String nom, String prenom) {
         this.login = login;
@@ -18,12 +14,12 @@ public class Adherent {
         this.prenom = prenom;
     }
 
-    public Adherent(String id, String login, String password, String nom, String prenom) {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
         this.id = id;
-        this.login = login;
-        this.password = password;
-        this.nom = nom;
-        this.prenom = prenom;
     }
 
     public String getLogin() {
@@ -56,16 +52,5 @@ public class Adherent {
 
     public void setPrenom(String prenom) {
         this.prenom = prenom;
-    }
-
-    @Override
-    public String toString() {
-        return "Adhérent{" +
-                "id='" + id + '\'' +
-                ", login='" + login + '\'' +
-                ", password='" + password + '\'' +
-                ", nom='" + nom + '\'' +
-                ", prenom='" + prenom + '\'' +
-                '}';
     }
 }
