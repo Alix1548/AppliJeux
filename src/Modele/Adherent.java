@@ -14,6 +14,14 @@ public class Adherent {
         this.prenom = prenom;
     }
 
+    public Adherent(int id, String login, String password, String nom, String prenom) {
+        this.id = id;
+        this.login = login;
+        this.password = password;
+        this.nom = nom;
+        this.prenom = prenom;
+    }
+
     public int getId() {
         return id;
     }

@@ -23,7 +23,7 @@ public class DAOlogin {
 
             if (rs.next()){
 
-                String id = rs.getString("idAdherent");
+                int id = rs.getInt("idAdherent");
                 String nom = rs.getString("nom");
                 String prenom = rs.getString("prenom");
                 Adherent adherent = new Adherent(id,login,passsword,nom,prenom);
