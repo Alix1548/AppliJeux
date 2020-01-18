@@ -9,7 +9,7 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
 //        HttpSession session = request.getSession();
 //        session.getAttribute("login",id);
 
-        String erreur = "Login ou mot de passe incorect";
+        String erreur = "Login ou mot de passe incorrect";
         request.setAttribute("message",erreur);
 
         String user = request.getParameter("username");
